@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="img.jpg" >
+    <div class="container">
+        <h1 >Guessing Game</h1>
+        <div>
+            <label for="category">Choose a category:</label>
+            <select id="category">
+                <option value="bikes">Bike Names</option>
+                <option value="countries">Country Names</option>
+            </select>
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="gameArea" style="display: none;">
+            <div id="wordDisplay"></div>
+            <p id="message">Please enter each character:</p>
+            <input type="text" id="charInput" maxlength="1">
+            <button id="guessButton">Guess</button>
+            <p id="result"></p>
+            <p id="wrongGuesses"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
